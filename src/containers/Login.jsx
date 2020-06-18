@@ -11,7 +11,7 @@ const Login = () => (
       <form className='login__container--form'>
         <input className='input' type='text' placeholder='Correo' />
         <input className='input' type='password' placeholder='Contraseña' />
-        <button className='button'>Iniciar sesión</button>
+        <button className='button' type='button'>Iniciar sesión</button>
         <div className='login__container--remember-me'>
           <label>
             <input type='checkbox' id='cbox1' value='first_checkbox' />
@@ -22,12 +22,12 @@ const Login = () => (
       </form>
       <section className='login__container--social-media'>
         <div>
-          <img src={googleIcon} />
+          <img src={googleIcon} alt='imagen' />
           {' '}
           Inicia sesión con Google
         </div>
         <div>
-          <img src={twitterIcon} />
+          <img src={twitterIcon} alt='iamgen' />
           {' '}
           Inicia sesión con Twitter
         </div>
