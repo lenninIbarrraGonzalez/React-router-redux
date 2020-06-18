@@ -1,0 +1,28 @@
+Container: Login
+Debemos modificar nuestra configuración del entorno de desarrollo local para que pueda funcionar con el uso de rutas, debemos ir al archivo webpack.config.js y añadir este fragmento de código antes de plugins:
+module.exports = {
+  {/*...*/}
+  devServer: {  
+    historyApiFallback: true,  
+  },
+  {/*...*/}
+}
+
+//////////////////
+
+Para no tener que abrir otro tab u otra ventana de la terminal solo para levantar el “json-server”, modifica los scripts de tu package.json de esta manera:
+
+"server": "json-server initialState.json",
+    "start": "webpack-dev-server --open --mode development & npm 	 
+    run server"
+Así, al ejecutar npm start se levantará tanto el servidor de desarrollo como el json-server
+
+/////////////////
+
+<React.Fragment>
+    <h1>No encontrado :(</h1>
+</React.Fragment>
+PICO PARENTESIS
+<>
+  <h1>No encontrado :(</h1>
+</>
